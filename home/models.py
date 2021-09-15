@@ -51,7 +51,7 @@ class Product(models.Model):
     labels = models.CharField(choices= LABELS, max_length= 100)
 
     def __str__(self) :
-        return self.name 
+        return self.tittles
 
 
 class Ad(models.Model):
