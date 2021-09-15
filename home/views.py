@@ -3,9 +3,9 @@ from django.views.generic import View
 
 # Create your views here.
 
-def home(request):
+#def home(request):
 
-    return render(request, 'index.html')
+    # return render(request, 'index.html')
 
 class BaseView(View):
     pass
