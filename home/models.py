@@ -26,7 +26,7 @@ class SubCategory(models.Model):
     def __str__(self):
         return self.name
 
-class slider(models.Model):
+class Slider(models.Model):
     name = models.CharField(max_length= 300)
     slug = models.CharField(max_length= 300, unique = True)
     description = models.TextField(max_length= 300, blank = True)
@@ -44,14 +44,14 @@ class Product(models.Model):
     price = models.IntegerField()
     discounted_price = models.IntegerField(default= 0)
     image = models.ImageField(upload_to = 'media')
-    description = models.IntegerField()
+    description = models.TextField()
     status = models.CharField(max_length= 50, choices= STATUS)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     SubCategory = models.ForeignKey(SubCategory, on_delete=models.CASCADE)
     labels = models.CharField(choices= LABELS, max_length= 100)
 
     def __str__(self) :
-        return self.tittles
+        return self.tittle
 
 
 class Ad(models.Model):

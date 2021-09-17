@@ -5,7 +5,7 @@ from .models import *
 
 admin.site.register(Category)
 admin.site.register(SubCategory)
-admin.site.register(slider)
+admin.site.register(Slider)
 admin.site.register(Ad)
 admin.site.register(Product)
 
