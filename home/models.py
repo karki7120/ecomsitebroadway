@@ -8,6 +8,7 @@ class Category(models.Model):
     name = models.CharField(max_length= 300)
     slug = models.CharField(max_length= 300, unique=True)
     description = models.CharField(max_length= 300, blank= True)
+    status = models.CharField(max_length= 300, choices = STATUS, blank= True)
 
 
     def __str__(self):
